@@ -1,0 +1,48 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  display: block;
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (width>=600px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+section {
+  display: block;
+}
+
+.plants ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20ch, 1fr));
+  gap: 1ch;
+}
+
+.plant {
+  display: grid;
+  border: 0.5px solid #eee;
+  padding: 1rem;
+  gap: 1ch;
+}
+
+.plant figure {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.cart-item {
+  padding: 0.25rem;
+  display: grid;
+  align-content: space-between;
+  justify-content: start;
+}
